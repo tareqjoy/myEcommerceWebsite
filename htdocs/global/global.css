@@ -1,0 +1,37 @@
+.bubble-div {
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px #B2B2B2;
+    margin: 12px;
+    display: inline-block;
+    padding: 10px;
+    transition: .5s;
+}
+
+.bubble-div::before {
+    background-color: #F2F2F2;
+    box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4);
+    content: "\00a0";
+    display: block;
+    height: 10px;
+    left: -15px;
+    position: relative;
+    top: 5px;
+    transform: rotate( 45deg);
+    -moz-transform: rotate( 45deg);
+    -ms-transform: rotate( 45deg);
+    -o-transform: rotate( 45deg);
+    -webkit-transform: rotate( 45deg);
+    width: 10px;
+    margin-bottom: -10px;
+}
+
+.bubble-div p {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.bubble-div p:first-child {
+    font-weight: bold;
+}

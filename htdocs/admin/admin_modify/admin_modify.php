@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="admin_modify.css">
     <link rel="stylesheet" type="text/css" href="/global/admin_header/admin_header.css">
+    <link rel="stylesheet" type="text/css" href="/global/global.css">
     <link rel="stylesheet" type="text/css" href="../portion/category.css">
     <script src="/jquery-3.5.1.js"></script>
     <script src="/jqueryui/jquery-ui.js"></script>
+    <script src="/global/global.js"></script>
 </head>
 <?php
 session_start();
@@ -46,13 +48,10 @@ if (!isset($_GET["type"]) || empty($_GET['type'])) {
         </div>
         <hr class="verticalSpace">
         <div class="dlg">
-            <div class="editHere">
+            <div class="categoryDiv">
+                
+            </div>
 
-            </div>
-            <div class="buttons">
-                <input type="button" value="Delete">
-                <input type="button" value="Add">
-            </div>
         </div>
     </div>
 
@@ -106,6 +105,8 @@ if (!isset($_GET["type"]) || empty($_GET['type'])) {
         $('.detailsbar').sortable();
     });
 
+ 
+
     function loadForm(id, name, image) {
         $(function() {
             $.ajax({
@@ -116,9 +117,8 @@ if (!isset($_GET["type"]) || empty($_GET['type'])) {
                     'name': name,
                     'image': image
                 },
-                dataType: 'html',
                 success: function(data) {
-                    $('.edithere').html(data);
+                    $('.dlg').html(data);
 
                 },
                 error: function(jqXHR, exception) {
@@ -128,6 +128,7 @@ if (!isset($_GET["type"]) || empty($_GET['type'])) {
         });
     }
     loadForm();
+
 
 </script>
 

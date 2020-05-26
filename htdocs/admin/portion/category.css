@@ -40,7 +40,7 @@
     border-left: 2px solid #eeeeee;
 }
 
-.editDiv p {
+.editDiv>p {
     width: 60px;
     display: inline-block;
 }
@@ -50,4 +50,20 @@
     max-width: 300px;
     margin: 10px;
     padding: 5px;
+    transition: .5s;
+    box-shadow: inset 0 0 1px 1px #eeeeee;
+}
+
+.error-input {
+    border: solid red 1px;
+    background-color: #ffcdd2;
+}
+
+.default-input {
+    border: solid gray 1px;
+    background-color: white;
+}
+
+.disabled-input {
+    background-color: #e0e0e0;
 }
