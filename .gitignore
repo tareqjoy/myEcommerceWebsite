@@ -1,6 +1,9 @@
 /*
 !htdocs/
+!mysql/
 mysql/*
+!mysql/data/
+mysql/data/*
 !mysql/data/db/
 !/mysql/data/ibdata1
 !/mysql/data/ib_logfile0
