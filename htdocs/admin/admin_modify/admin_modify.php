@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="admin_modify.css">
-    <link rel="stylesheet" type="text/css" href="/global/admin_header/admin_header.css">
+    <link rel="stylesheet" type="text/css" href="/admin/global/admin_header/admin_header.css">
     <link rel="stylesheet" type="text/css" href="/global/global.css">
-    <link rel="stylesheet" type="text/css" href="../portion/category.css">
+    <link rel="stylesheet" type="text/css" href="/admin/admin_modify/portion/category.css">
     <script src="/jquery-3.5.1.js"></script>
     <script src="/jqueryui/jquery-ui.js"></script>
     <script src="/global/global.js"></script>
@@ -29,7 +29,7 @@ if (!isset($_GET["type"]) || empty($_GET['type'])) {
 
     <?php
     $root = $_SERVER['DOCUMENT_ROOT'];
-    include($root . '/global/admin_header/admin_header.php'); ?>
+    include($root.'/admin/global/admin_header/admin_header.php');  ?>
     <div class="editmenu" id="editmenu">
         <div class="info">
             <div class="searchbar">
@@ -76,7 +76,7 @@ if (!isset($_GET["type"]) || empty($_GET['type'])) {
             var src = $('#insearch').val();
             $.ajax({
                 type: 'get',
-                url: '/admin/portion/load_data.php',
+                url: '/admin/admin_modify/load_data.php',
                 data: {
                     'type': searchParams.get('type'),
                     'search': src
@@ -111,7 +111,7 @@ if (!isset($_GET["type"]) || empty($_GET['type'])) {
         $(function() {
             $.ajax({
                 type: 'get',
-                url: '/admin/portion/category_edit.php',
+                url: '/admin/admin_modify/portion/category_edit.php',
                 data: {
                     'id': id,
                     'name': name,

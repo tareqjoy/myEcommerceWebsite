@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="admin_home.css">
-    <link rel="stylesheet" type="text/css" href="/global/admin_header/admin_header.css">
+    <link rel="stylesheet" type="text/css" href="/admin/global/admin_header/admin_header.css">
 </head>
 <?php
 session_start();
@@ -20,7 +20,7 @@ if (!isset($_SESSION['username']) || empty($_SESSION['username'])) {
 <body>
     <?php 
     $root = $_SERVER['DOCUMENT_ROOT'];
-    include($root.'/global/admin_header/admin_header.php'); 
+    include($root.'/admin/global/admin_header/admin_header.php'); 
     ?>
 
     <div class="editmenu">

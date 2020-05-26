@@ -46,7 +46,7 @@
 
             $.ajax({
                 type: 'post',
-                url: '/admin/user_admin_login.php',
+                url: '/admin/admin_login.php',
                 data: $('form').serialize(),
                 success: function(data) {
                     if (data==1){
