@@ -1,0 +1,49 @@
+.websiteLogo {
+    max-width: 140px;
+    max-height: 70px;
+}
+
+.header {
+    width: 100%;
+    padding: 15px 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    z-index: 999;
+}
+
+.header>div {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header>div>table {
+    width: 100%;
+}
+
+.header>div>table tr>td {
+    text-align: center;
+}
+
+.headerIcon {
+    width: 25px;
+    height: 25px;
+}
+
+.headerSearchInput {
+    background-color: #fafafa;
+    margin: 0;
+    padding: 20px;
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #eeeeee;
+}
+
+.headerSearchLogo {
+    height: 44px;
+    width: 44px;
+    padding: 15px;
+    margin: 0;
+    background-color: #eeeeee;
+}

@@ -1,0 +1,53 @@
+.categoryDetails {
+    width: 100%;
+    padding: 10px;
+    border-bottom: solid #eeeeee 2px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.categoryDetails:hover {
+    background-color: #eeeeee;
+}
+
+.categoryDetails:active {
+    transition: 0s;
+}
+
+.categoryDetails img {
+    content: url('/img/logo/menu.png');
+    width: 30px;
+    height: 30px;
+    cursor: move;
+}
+
+.categoryDetails p {
+    display: inline;
+}
+
+.categoryDetails p:first-of-type {
+    color: gray;
+    margin: 0px 10px;
+}
+
+.categoryDetails p:last-of-type {
+    color: black;
+    font-weight: bold;
+}
+
+.categoryDetails div {
+    height: 10px;
+    border-left: 2px solid #eeeeee;
+}
+
+.editDiv p {
+    width: 60px;
+    display: inline-block;
+}
+
+.editDiv input[type=text] {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    padding: 5px;
+}

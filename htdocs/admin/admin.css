@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    background-image: linear-gradient(to bottom right, #2196f3, #b388ff);
+}
+
+.form {
+    text-align: center;
+    padding: 20px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: aliceblue;
+    border-radius: 15px;
+    overflow: auto;
+}
+
+.form input[type=text],input[type=password],input[type=submit]  {
+    padding: 5px;
+    margin: 10px;
+    width: 300px;
+}
+
+.form p {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #d32f2f;
+    transition: 1s;
+}

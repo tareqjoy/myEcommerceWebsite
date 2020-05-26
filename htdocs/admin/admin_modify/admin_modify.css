@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    margin: 0px 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #bdbdbd;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #757575;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #424242;
+}
+
+.editmenu {
+    display: flex;
+}
+
+.searchbar input[type=text] {
+    width: 85%;
+    padding: 7px;
+    box-sizing: border-box;
+    background-image: url('/img/logo/search.png');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    border: 0px solid #e0e0e0;
+    padding-left: 35px;
+    background-position: 10px 9px;
+}
+
+.editmenu input[type=text]:hover {
+    background-color: #eeeeee;
+}
+
+.searchbar img {
+    width: 50px;
+    height: 50px;
+}
+
+.searchbarLogo {
+    width: 30px;
+    height: 30px;
+}
+
+.searchbar {
+    width: 100%;
+    padding: 16px;
+}
+
+.detailsbar {
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.info {
+    width: 25%;
+    min-width: 400px;
+    background-color: #fafafa;
+    border-right: solid #eeeeee 1px;
+    display: flex;
+    flex-flow: column;
+}
+
+.horizontalSpace {
+    width: 100%;
+    height: 0.5px;
+    margin: 0px;
+    background-color: #eeeeee;
+}
+
+.dlg {
+    width: 75%;
+    min-width: 400px;
+}
+
+.editHere {
+    width: 100%;
+    height: 92%;
+}
+
+.buttons {
+    width: 100%;
+    height: 8%;
+    background-color: #eeeeee;
+    text-align: right;
+}
+
+@media (min-width: 800px) {
+    .editmenu {}
+}
+
+@media (max-width: 800px) {
+    .editmenu {
+        flex-flow: column;
+    }
+    .editmenu div:first-child {
+        width: 100%;
+        background-color: blue;
+    }
+    .editmenu div:last-child {
+        width: 100%;
+        background-color: black;
+    }
+    .editmenu hr {
+        margin: 0;
+        padding: 2px;
+        background-color: aqua;
+        height: 100%;
+    }
+    .editmenu input {
+        display: block;
+        padding: 5px;
+        border: none;
+        width: 100%;
+        transition: .5s;
+        background-color: inherit;
+    }
+    .editmenu input:hover {
+        background-color: #eeeeee;
+    }
+}
